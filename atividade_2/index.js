@@ -1,13 +1,17 @@
 // ## Importe a biblioteca ##
-let rl = require('readline-sync');
+let rs = require("readline-sync");
 
-let mascara = rl.question("Você está usando mascara ao sair de casa? (Sim ou Não)");
+let mask = rs.question("Está usando mascara quando sai de casa? ");
 
-let lavMao = rl.question("Está lavando as mãos frequentemente? (Sim ou Não)")
+let lavMao = rs.question("Esta lavando as mãos quando sai de casa? ");
 
-//Operador ternario
-let Result = mascara === lavMao ? "Parabéns" : "Deixa de ser porco"; 
-console.log(Result)
+if (mask == "sim" && lavMao == "sim") {
+    console.log("Parabens \n");
+} else {
+    console.log("ta vacilando ein \n");
+}
+
+
 
 
 
