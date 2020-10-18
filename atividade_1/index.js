@@ -1,10 +1,11 @@
 // ## Importe a biblioteca ##
-let rl = require("readline-sync");
+let rs = require('readline-sync');
 
-let numeroVoo = rl.question("Por favor informe o numero do seu Voo?");
-let letraFileira = rl.question("Por favor informe em qual fileira deseja sentar? (A, B, C, D ou F) ");
+let numVoo = rs.question('Qual número do seu Voo? ');
 
-console.log(`Seu voo é ${numeroVoo} Seu assento é na fileira ${letraFileira}`)
+let fileira = rs.question('Selecione a fileira que deseja sentar: A - B - C - D - F: ');
+
+console.log('O número do seu voo é: '+numVoo ,'e a fileira escolhida é: '+fileira)
 
 
 
